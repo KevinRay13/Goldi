@@ -7,7 +7,7 @@ module.exports = {
     axios
 
       .get(
-        `https://sandbox-api.brewerydb.com/v2/beer/random/?key=${BREWERY_DB_KEY}`
+        `https://sandbox-api.brewerydb.com/v2/beer/random/?key=3b3355e0b9eb965f466d634762d09cb6`
       )
       .then(result => res.send(result.data))
       .catch(function(error) {

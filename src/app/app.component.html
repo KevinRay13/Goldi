@@ -1,6 +1,15 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>Welcome to {{ title }}!</h1>
-
+  <div>
+    <h1>
+      {{ beerOTD['data'].name }}
+    </h1>
+    <p>{{ beerOTD['data'].abv }}%</p>
+    <p>
+      {{ beerOTD['data'].style.name }}
+    </p>
+    <button (click)="getRandomBeer()">Random Beer</button>
+  </div>
   <router-outlet></router-outlet>
 </div>
